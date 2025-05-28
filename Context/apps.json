@@ -1,0 +1,176 @@
+[
+  {
+    "name": "Adobe Premier Pro",
+    "names": [
+      "premiere",
+      "premiere pro",
+      "adobe premiere",
+      "адоб премьер",
+      "премьер про"
+    ],
+    "path": "C:\\Program Files\\Adobe\\Adobe Premiere Pro 2025\\Adobe Premiere Pro.exe"
+  },
+  {
+    "name": "Arduino IDE",
+    "names": [
+      "arduino",
+      "ардуино",
+      "arduino ide",
+      "ардуино идэ"
+    ],
+    "path": "C:\\Program Files\\arduino\\Arduino IDE.exe"
+  },
+  {
+    "name": "CuberDuck",
+    "names": [
+      "cyberduck",
+      "сайбердак",
+      "cyber duck",
+      "duck",
+      "дак"
+    ],
+    "path": "C:\\Program Files\\Cyberduck\\Cyberduck.exe"
+  },
+  {
+    "name": "Docker",
+    "names": [
+      "docker",
+      "докер",
+      "docker desktop",
+      "докер десктоп"
+    ],
+    "path": "C:\\Program Files\\Docker\\Docker\\Docker Desktop.exe"
+  },
+  {
+    "name": "FortiClient",
+    "names": [
+      "forticlient",
+      "фортик",
+      "фортиклиент",
+      "fortinet",
+      "фотик"
+    ],
+    "path": "C:\\Program Files\\Fortinet\\FortiClient\\FortiClient.exe"
+  },
+  {
+    "name": "Git bash",
+    "names": [
+      "git bash",
+      "гит баш",
+      "git",
+      "гит"
+    ],
+    "path": "C:\\Program Files\\Git\\git-bash.exe"
+  },
+  {
+    "name": "Google chrome",
+    "names": [
+      "chrome",
+      "гугл хром",
+      "хром",
+      "google chrome"
+    ],
+    "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+  },
+  {
+    "name": "cLion",
+    "names": [
+      "clion",
+      "си лайон",
+      "clion jetbrains",
+      "clion ide"
+    ],
+    "path": "C:\\Program Files\\JetBrains\\CLion 2024.1.3\\bin\\clion64.exe"
+  },
+  {
+    "name": "DataGrip",
+    "names": [
+      "datagrip",
+      "дата грип",
+      "jetbrains datagrip",
+      "data grip"
+    ],
+    "path": "C:\\Program Files\\JetBrains\\DataGrip 2024.1.4\\bin\\datagrip64.exe"
+  },
+  {
+    "name": "Goland",
+    "names": [
+      "goland",
+      "голанд",
+      "go land",
+      "jetbrains goland"
+    ],
+    "path": "C:\\Program Files\\JetBrains\\GoLand 2024.1.1\\bin\\goland64.exe"
+  },
+  {
+    "name": "PhpStorm",
+    "names": [
+      "phpstorm",
+      "пхп шторм",
+      "php storm",
+      "jetbrains phpstorm"
+    ],
+    "path": "C:\\Program Files\\JetBrains\\PhpStorm 2024.1\\bin\\phpstorm64.exe"
+  },
+  {
+    "name": "PyCharm",
+    "names": [
+      "pycharm",
+      "пайчарм",
+      "пай чарам",
+      "jetbrains pycharm"
+    ],
+    "path": "C:\\Program Files\\JetBrains\\PyCharm 2024.2.0.1\\bin\\pycharm64.exe"
+  },
+  {
+    "name": "WebStorm",
+    "names": [
+      "webstorm",
+      "вебшторм",
+      "веб шторм",
+      "jetbrains webstorm"
+    ],
+    "path": "C:\\Program Files\\JetBrains\\WebStorm 2024.1.1\\bin\\webstorm64.exe"
+  },
+  {
+    "name": "OBS Studio",
+    "names": [
+      "obs",
+      "obs studio",
+      "обс",
+      "о б с"
+    ],
+    "path": "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe"
+  },
+  {
+    "name": "Team Viewer",
+    "names": [
+      "teamviewer",
+      "тимвивер",
+      "team viewer"
+    ],
+    "path": "C:\\Program Files\\TeamViewer\\TeamViewer.exe"
+  },
+  {
+    "name": "E-Imzo",
+    "names": [
+      "e-imzo",
+      "e imzo",
+      "имзо",
+      "эй имзо"
+    ],
+    "path": "C:\\Program Files (x86)\\E-IMZO\\E-IMZO.exe"
+  },
+  {
+    "name": "Battle Net",
+    "names": [
+      "battle net",
+      "battle.net",
+      "батлнет",
+      "батл нет",
+      "бателнет",
+      "agent blizzard"
+    ],
+    "path": "C:\\ProgramData\\Battle.net\\Agent\\Agent.exe"
+  }
+]
