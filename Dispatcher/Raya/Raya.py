@@ -1,4 +1,5 @@
 import os
+import time
 
 from Core.Dispatcher import AbstractDispatcher
 from Core.Executor import AbstractExecutor
@@ -8,6 +9,9 @@ from Logger.Logger import Logger
 
 
 class Dispatcher(AbstractDispatcher):
+    alias = ['рая']
+    lastCall: float = 0
+
     def __init__(self, executor: AbstractExecutor, logger: Logger):
         self.handler = Handler(self.getApiKey(), self.getModel())
         self.executor = executor
@@ -20,7 +24,13 @@ class Dispatcher(AbstractDispatcher):
         return 'gpt-4-turbo'
 
     def start(self, ui: UserInterface):
-        prompt = ui.input.audio()
+        prompt = ui.input.text()
+
+        for alias in self.alias:
+            if alias not in prompt.lower() and (time.time() - self.lastCall) > 30:
+                return
+
+        self.lastCall = time.time()
 
         self.logger.user(prompt)
 
