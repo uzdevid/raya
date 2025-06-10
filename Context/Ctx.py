@@ -1,10 +1,11 @@
+import os
+
 from Context.ActiveWindow import ActiveWindow
 from Context.AppManager import AppManager
 from Context.Clipboard import Clipboard
 from Context.FileSystem import FileSystem
 from Core.UserInterface import UserInterface
 from Memory.Memory import Memory
-import os
 
 
 class Ctx:

@@ -2,6 +2,7 @@ from IO.Input import Input
 from IO.Output import Output
 from Logger.Logger import Logger
 
+
 class UserInterface:
     def __init__(self, input: Input, output: Output, logger: Logger):
         self.input = input
