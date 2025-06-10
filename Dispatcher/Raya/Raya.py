@@ -9,8 +9,8 @@ from Logger.Logger import Logger
 
 
 class Dispatcher(AbstractDispatcher):
-    alias = ['рая']
-    lastCall: float = 0
+    aliases = ['рая']
+    lastCall: float = time.time()
 
     def __init__(self, executor: AbstractExecutor, logger: Logger):
         self.handler = Handler(self.getApiKey(), self.getModel())
@@ -26,7 +26,7 @@ class Dispatcher(AbstractDispatcher):
     def start(self, ui: UserInterface):
         prompt = ui.input.getPrompt()
 
-        for alias in self.alias:
+        for alias in self.aliases:
             if alias not in prompt.lower() and (time.time() - self.lastCall) > 30:
                 return
 
