@@ -9,8 +9,10 @@ from Core.Robot import Robot
 from Core.UserInterface import UserInterface
 from Dispatcher.Raya.Executor import Executor
 from Dispatcher.Raya.Raya import Dispatcher
-from IO.Input import Input
+from IO.AudioInput import AudioInput
+from IO.CompositeInput import CompositeInput
 from IO.Output import Output
+from IO.TextInput import TextInput
 from Logger.CompositeLogger import CompositeLogger
 from Logger.FileLogger import FileLogger
 from Logger.MemoryLogger import MemoryLogger
@@ -32,7 +34,7 @@ def main():
         MemoryLogger(memory),
     ])
 
-    ui = UserInterface(Input('ru-RU'), Output(), logger)
+    ui = UserInterface(AudioInput('ru-RU'), Output(), logger)
 
     executor = Executor(Ctx(ui, memory))
     dispatcher = Dispatcher(executor, logger)

@@ -12,7 +12,7 @@ class UserInterface:
         self.logger.assistant(question)
         self.output.speak(question)
 
-        return self.input.get(question)
+        return self.input.getPrompt()
 
     def speak(self, text: str):
         self.logger.assistant(text)

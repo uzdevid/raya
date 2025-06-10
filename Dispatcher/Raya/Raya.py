@@ -24,7 +24,7 @@ class Dispatcher(AbstractDispatcher):
         return 'gpt-4-turbo'
 
     def start(self, ui: UserInterface):
-        prompt = ui.input.text()
+        prompt = ui.input.getPrompt()
 
         for alias in self.alias:
             if alias not in prompt.lower() and (time.time() - self.lastCall) > 30:

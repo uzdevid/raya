@@ -2998,5 +2998,85 @@
     "timestamp": "2025-06-10T12:34:57.728911",
     "role": "assistant",
     "message": "Сейчас 12:34"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:04.393161",
+    "role": "user",
+    "message": "привет рая"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:06.454195",
+    "role": "code",
+    "message": "ctx.ui.speak(\"Привет! Чем могу помочь?\")"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:06.460194",
+    "role": "assistant",
+    "message": "Привет! Чем могу помочь?"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:12.886189",
+    "role": "user",
+    "message": "привет рая"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:15.498173",
+    "role": "code",
+    "message": "ctx.ui.speak(\"Привет! Чем могу помочь?\")"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:15.504208",
+    "role": "assistant",
+    "message": "Привет! Чем могу помочь?"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:23.555455",
+    "role": "user",
+    "message": "привет рая"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:25.870474",
+    "role": "code",
+    "message": "ctx.ui.speak(\"Привет! Чем могу помочь?\")"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:25.876046",
+    "role": "assistant",
+    "message": "Привет! Чем могу помочь?"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:28.108592",
+    "role": "user",
+    "message": "привет рая"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:29.450415",
+    "role": "code",
+    "message": "ctx.ui.speak(\"Привет! Чем могу помочь?\")"
+  },
+  {
+    "timestamp": "2025-06-10T13:10:29.456940",
+    "role": "assistant",
+    "message": "Привет! Чем могу помочь?"
+  },
+  {
+    "timestamp": "2025-06-10T13:11:24.652240",
+    "role": "user",
+    "message": "рая привет"
+  },
+  {
+    "timestamp": "2025-06-10T13:11:25.828305",
+    "role": "code",
+    "message": "ctx.ui.speak(\"Привет!\")"
+  },
+  {
+    "timestamp": "2025-06-10T13:11:25.835253",
+    "role": "assistant",
+    "message": "Привет!"
+  },
+  {
+    "timestamp": "2025-06-10T13:11:30.947342",
+    "role": "user",
+    "message": "рая привет"
   }
 ]
