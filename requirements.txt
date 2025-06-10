@@ -1,0 +1,11 @@
+keyboard==0.13.5
+langchain_core==0.3.64
+langchain_openai==0.3.21
+numpy==2.3.0
+pyperclip==1.8.2
+python-dotenv==1.1.0
+sounddevice==0.5.2
+SpeechRecognition==3.10.0
+torch==2.7.1
+omegaconf==2.3.0
+PyAudio==0.2.14
