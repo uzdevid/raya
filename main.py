@@ -14,21 +14,23 @@ from IO.Output import Output
 from Logger.CompositeLogger import CompositeLogger
 from Logger.FileLogger import FileLogger
 from Logger.MemoryLogger import MemoryLogger
+from Logger.StdoutLogger import StdoutLogger
 from Memory.JsonMemory import JsonMemory
-
 
 load_dotenv()
 
-def main():
-    memory = JsonMemory()
 
+def main():
     if not os.path.isdir("./Logger/logs/{date}".format(date=date.today())):
         os.makedirs("./Logger/logs/{date}".format(date=date.today()))
 
-    logger = CompositeLogger(
-        fileLogger=FileLogger("./Logger/logs/{date}/raya-{runId}.log".format(date=date.today(), runId=int(time.time()))),
-        memoryLogger=MemoryLogger(memory)
-    )
+    memory = JsonMemory()
+
+    logger = CompositeLogger([
+        StdoutLogger(),
+        FileLogger("./Logger/logs/{date}/raya-{runId}.log".format(date=date.today(), runId=int(time.time()))),
+        MemoryLogger(memory),
+    ])
 
     ui = UserInterface(Input('ru-RU'), Output(), logger)
 
