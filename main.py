@@ -8,6 +8,7 @@ from Context.Ctx import Ctx
 from Core.Robot import Robot
 from Core.UserInterface import UserInterface
 from Dispatcher.Raya.Executor import Executor
+from Dispatcher.Raya.Handler import Handler
 from Dispatcher.Raya.Raya import Dispatcher
 from IO.AudioInput import AudioInput
 from IO.CompositeInput import CompositeInput
@@ -39,10 +40,12 @@ def main():
         TextInput()
     ])
 
-    ui = UserInterface(input, Output(), logger)
+    handler = Handler('gpt-4-turbo')
 
-    executor = Executor(Ctx(ui, memory))
-    dispatcher = Dispatcher(executor, logger)
+    ui = UserInterface(input, Output(), handler, logger)
+
+    executor = Executor(Ctx(ui, memory, logger))
+    dispatcher = Dispatcher(handler, executor, logger)
 
     robot = Robot(logger, dispatcher)
 

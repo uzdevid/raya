@@ -17,3 +17,9 @@ class MemoryLogger(Logger):
 
     def _write(self, role, message):
         self.memory.save(role, message)
+
+    def info(self, message):
+        pass
+
+    def error(self, message):
+        pass

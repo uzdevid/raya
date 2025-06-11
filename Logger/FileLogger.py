@@ -12,15 +12,6 @@ class FileLogger(Logger):
             with open(self.filename, 'w', encoding='utf-8') as f:
                 pass
 
-    def assistant(self, message):
-        self.info('Assistant:' + message)
-
-    def user(self, message):
-        self.info('User:' + message)
-
-    def code(self, code):
-        self.info('Code: ' + code)
-
     def _write(self, level, message):
         now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         log_line = f"[{now}] [{level.upper()}] {message}"
@@ -29,3 +20,6 @@ class FileLogger(Logger):
 
     def info(self, message):
         self._write('info', message)
+
+    def error(self, message):
+        self._write('error', message)

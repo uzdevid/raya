@@ -12,7 +12,7 @@ class Executor(AbstractExecutor):
         try:
             exec(self.__clear(code), {}, {'ctx': self.ctx})
         except Exception as e:
-            self.ctx.ui.output.print(str(e))
+            self.ctx.logger.error(str(e))
             self.ctx.ui.speak('Прошу прощения! Получила ошибку при выполнении команды. Детальная информация на экране.')
 
     @staticmethod

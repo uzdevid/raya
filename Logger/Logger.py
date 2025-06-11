@@ -2,13 +2,19 @@ from abc import ABC, abstractmethod
 
 
 class Logger(ABC):
-    @abstractmethod
     def assistant(self, message):
-        pass
+        self.info('Assistant:' + message)
 
-    @abstractmethod
     def user(self, message):
-        pass
+        self.info('User:' + message)
 
     def code(self, code):
+        self.info('Code:' + code)
+
+    @abstractmethod
+    def info(self, message):
+        pass
+
+    @abstractmethod
+    def error(self, message):
         pass

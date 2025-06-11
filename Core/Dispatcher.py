@@ -5,11 +5,7 @@ from Core.UserInterface import UserInterface
 
 class AbstractDispatcher(ABC):
     @abstractmethod
-    def getApiKey(self) -> str:
-        pass
-
-    @abstractmethod
-    def getModel(self) -> str:
+    def getAliases(self) -> list:
         pass
 
     @abstractmethod

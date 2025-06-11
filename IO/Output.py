@@ -20,10 +20,6 @@ class Output:
 
         self.model = model
 
-    @staticmethod
-    def print(text: str):
-        print(text)
-
     def speak(self, text: str):
         if len(text) <= 1000:
             return self.__speak(text)
@@ -49,10 +45,9 @@ class Output:
     def __splitText(text: str) -> list:
         parts = []
         while len(text) > 1000:
-            # Ищем последнее предложение до max_len
             split_idx = text.rfind('.', 0, 1000)
             if split_idx == -1:
-                split_idx = 1000  # не нашли точку — просто обрежем
+                split_idx = 1000
             part = text[:split_idx + 1].strip()
             parts.append(part)
             text = text[split_idx + 1:].strip()

@@ -1,4 +1,5 @@
 import os
+import time
 
 import openai
 from langchain_openai import ChatOpenAI
@@ -30,8 +31,6 @@ class Handler(AbstractHandler):
             thread_id=self.thread.id,
             assistant_id=self.assistant_id
         )
-
-        import time
 
         while True:
             status = openai.beta.threads.runs.retrieve(thread_id=self.thread.id, run_id=run.id)
